@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>init uicollectionview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let layout = UICollectionViewFlowLayout()
+layout.scrollDirection = .vertical
+layout.minimumInteritemSpacing = 0
+layout.minimumLineSpacing = 0
+layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+layout.itemSize = CGSize(width: &lt;#width#&gt;, height: &lt;#height#&gt;)
+layout.headerReferenceSize = CGSize(width: view.width, height: 44)
+collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+collectionView.dataSource = self
+collectionView.delegate = self
+collectionView.backgroundColor = .white
+collectionView.isPagingEnabled = false
+collectionView.showsHorizontalScrollIndicator = false
+collectionView.showsVerticalScrollIndicator = false
+collectionView.register(&lt;#UICollectionReusableView#&gt;.self, ofKind: .header)
+collectionView.register(&lt;#UICollectionViewCell#&gt;.self)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>49DF66FF-1A39-49D6-954B-BA3243082DB7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>快速建立 UICollectionView 初始化</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】init uicollectionview</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

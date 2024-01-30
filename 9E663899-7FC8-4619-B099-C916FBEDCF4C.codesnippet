@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kkCustomScrollView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private lazy var scrollView: UIScrollView = {
+    let scrollView = UIScrollView()
+    scrollView.delegate = self
+    scrollView.isPagingEnabled = true
+    scrollView.showsVerticalScrollIndicator = false
+    scrollView.showsHorizontalScrollIndicator = false
+    scrollView.contentInsetAdjustmentBehavior = .never
+    scrollView.isDirectionalLockEnabled = true
+    scrollView.contentOffset = .zero
+    return scrollView
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9E663899-7FC8-4619-B099-C916FBEDCF4C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>private lazy var scrollView: UIScrollView = { ... }()</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】customScrollView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

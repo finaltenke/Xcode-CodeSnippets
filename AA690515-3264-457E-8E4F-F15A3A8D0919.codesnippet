@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kkCodableDecodeInt</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>&lt;#parameter#&gt; = (try? values.decode(Int.self, forKey: .&lt;#parameter#&gt;)) ?? 0</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AA690515-3264-457E-8E4F-F15A3A8D0919</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>parameter = (try? values.decode(Int.self, forKey: .parameter)) ?? 0</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】Codable decode Int</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

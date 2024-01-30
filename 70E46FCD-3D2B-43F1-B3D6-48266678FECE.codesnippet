@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kkDidTapCustomButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@objc private func didTap&lt;#custom#&gt;Button(_ sender: UIButton) {
+        
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>70E46FCD-3D2B-43F1-B3D6-48266678FECE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>@objc private func didTapCustomButton(_ sender: UIButton) { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】didTapCustomButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kkCustomTextView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private lazy var &lt;#custom#&gt;TextView: UITextView = {
+    let textView = UITextView()
+    textView.delegate = self
+    textView.wrapToContent()
+    textView.backgroundColor = .clear
+    return textView
+}()
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AB9F398A-9963-409A-A5C7-2585C72790EB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>private lazy var customTextView: UITextView = { ... }()</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】customTextView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

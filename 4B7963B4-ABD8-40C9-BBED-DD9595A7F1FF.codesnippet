@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>protocol ui</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>protocol &lt;#View#&gt;UI {
+    var &lt;#View#&gt;: UIView! { get set }
+    var &lt;#View#&gt;: UIView! { get set }
+}
+
+extension &lt;#View#&gt;UI where Self: UIView {
+    private func initialViews() {
+        var itSelf = self
+        itSelf.&lt;#View#&gt; = UIView()
+        itSelf.&lt;#View#&gt; = UIView()
+    }
+    
+    func setupViews() {
+        initialViews()
+        
+        addSubview(&lt;#View#&gt;)
+        addSubview(&lt;#View#&gt;)
+        
+        &lt;#view#&gt;.snp.makeConstraints { make in
+            &lt;#code#&gt;
+        }
+        &lt;#view#&gt;.snp.makeConstraints { make in
+            &lt;#code#&gt;
+        }
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4B7963B4-ABD8-40C9-BBED-DD9595A7F1FF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>快速建立 protocol ViewUI { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】protocol UI</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

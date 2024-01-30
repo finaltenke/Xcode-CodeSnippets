@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kkCustomAddNotificationCombine</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import Combine
+
+private var cancellables: Set&lt;AnyCancellable&gt; = []
+
+// MARK: - Notification
+extension ONEClientManager {
+    private func addNotification() {
+        NotificationCenter.default
+            .publisher(for: .didChangeLikeState)
+            .map { ONELikeInfo(notification: $0) }
+            .filter { $0.id == inputID }
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] in self?.updateInfo($0) }
+            .store(in: &amp;cancellables)
+    }
+    
+    private func removeNotification() {
+        cancellables.removeAll()
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5E082645-4395-41D0-B073-0C3DD2E83109</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>private func addNotification() { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】addNotification Combine</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

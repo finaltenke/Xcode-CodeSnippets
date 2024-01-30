@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kkCustomError</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>enum &lt;#Name#&gt;Error: Error {
+    case invalid&lt;#case#&gt;
+}
+
+extension &lt;#Name#&gt;Error: LocalizedError {
+    var errorDescription: String? {
+        switch self {
+            case .invalid&lt;#case#&gt;:           return "无效的&lt;#描述#&gt;"
+        }
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7C422C4F-9805-4FC4-84DF-CACE7CB4AF13</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>enum NameError: Error { ... }</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】customError</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
