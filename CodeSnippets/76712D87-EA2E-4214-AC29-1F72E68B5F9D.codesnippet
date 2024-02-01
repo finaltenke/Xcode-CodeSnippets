@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kkCustomTextField</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private lazy var textField: UITextField = {
+    let textField = UITextField()
+    textField.textColor = UIColor(hex: 0x&lt;#FFFFFF#&gt;)
+    textField.font = .systemFont(ofSize: &lt;#T##CGFloat#&gt;)
+    textField.keyboardType = .numberPad
+    textField.delegate = self
+    textField.text = ""
+    textField.addTarget(self, action: #selector(textFieldDidChangeEditing(_:)), for: .editingChanged)
+    return textField
+}()
+
+/// did change text
+@objc func textFieldDidChangeEditing(_ textField: UITextField) {
+    guard let text = textField.text else { return }
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>76712D87-EA2E-4214-AC29-1F72E68B5F9D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>private lazy var textField: UITextField = { ... }()</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】customTextField</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

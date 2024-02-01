@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kkCustomCollectionView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private lazy var collectionView: UICollectionView = {
+    let layout = UICollectionViewFlowLayout()
+    layout.scrollDirection = .vertical
+    layout.itemSize = CGSize(width: &lt;#int#&gt;.pt, height: &lt;#int#&gt;.pt)
+    layout.minimumInteritemSpacing = 0
+    layout.minimumLineSpacing = 0
+    layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    layout.headerReferenceSize = CGSize(width: &lt;#Num#&gt;.pt, height: &lt;#Num#&gt;.pt)
+    
+    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+    collectionView.register(&lt;#CollectionCell#&gt;.self)
+    collectionView.register(&lt;#Header#&gt;.self, ofKind: .header)
+    collectionView.backgroundColor = .clear
+    collectionView.isScrollEnabled = false
+    collectionView.dataSource = self
+    collectionView.delegate = self
+    collectionView.contentInsetAdjustmentBehavior = .never
+    
+    let header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(loadHeaderData))
+    header.setTitle("下拉可以刷新", for: .idle)
+    header.setTitle("松开立即刷新", for: .pulling)
+    header.setTitle("正在刷新数据中...", for: .refreshing)
+    header.lastUpdatedTimeLabel?.isHidden = true
+    collectionView.mj_header = header
+
+    let footer = MJRefreshAutoNormalFooter(refreshingTarget: self, refreshingAction: #selector(loadFooterData))
+    footer.setTitle("上拉可以加载更多", for: .idle)
+    footer.setTitle("正在加载中...", for: .refreshing)
+    footer.setTitle("没有更多内容了～", for: .noMoreData)
+    collectionView.mj_footer = footer
+
+    return collectionView
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6CEE667F-2018-4AB6-B346-06A964916C15</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>private lazy var collectionView: UICollectionView = { ... }()</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】customCollectionView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

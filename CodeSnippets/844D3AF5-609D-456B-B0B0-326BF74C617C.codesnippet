@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>kkgcdsemaphore</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/** 信號燈線程 */
+@property (nonatomic, strong) dispatch_semaphore_t semaphore;
+// 初始化
+ws.semaphore = dispatch_semaphore_create(0);
+// 紅燈
+dispatch_semaphore_wait(ws.semaphore, DISPATCH_TIME_FOREVER);
+// 觸發綠燈
+dispatch_semaphore_signal(ws.semaphore);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>844D3AF5-609D-456B-B0B0-326BF74C617C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>紅綠燈線程</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Obj-C】GCD: dispatch_semaphore</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

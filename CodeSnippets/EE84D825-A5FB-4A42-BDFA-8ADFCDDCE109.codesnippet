@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>create model for HandyJSON</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import HandyJSON
+
+class &lt;#Model#&gt;: HandyJSON {
+    var aa: String?
+    var bb: Int?
+
+    required init() {}
+    
+    func mapping(mapper: HelpingMapper) {
+        mapper &lt;&lt;&lt;
+            self.aa &lt;-- "a_a"
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>EE84D825-A5FB-4A42-BDFA-8ADFCDDCE109</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>快速建立 HandyJSON Model</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>【Swift】create model for HandyJSON</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
