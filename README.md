@@ -38,3 +38,14 @@ xcode 檔案模組
 ~/Library/Developer/Xcode/Templates
 ```
 
+---
+# 腳本
+將本地檔案（Xcode配置檔）同步到Git檔案
+```
+python3 scripts/sync-to-git.py
+```
+
+將Git檔案同步到本地檔案（Xcode配置檔）
+```
+python3 scripts/sync-to-local.py
+```

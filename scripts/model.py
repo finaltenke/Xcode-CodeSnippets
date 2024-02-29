@@ -1,9 +1,9 @@
 # 儲存於Git的檔案
 git_folders = [
-    '../KeyBindings', 
-    '../FontAndColorThemes', 
-    '../CodeSnippets',
-    '../Templates',
+    'KeyBindings', 
+    'FontAndColorThemes', 
+    'CodeSnippets',
+    'Templates',
     ]
 
 # Xcode配置檔
